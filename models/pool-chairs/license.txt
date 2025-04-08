@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pool Chairs
+* source:	https://sketchfab.com/3d-models/pool-chairs-1dc5f81bb9cb42ceb5507c4fb31f6e1d
+* author:	Logan S. (https://sketchfab.com/ronsalrich)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pool Chairs" (https://sketchfab.com/3d-models/pool-chairs-1dc5f81bb9cb42ceb5507c4fb31f6e1d) by Logan S. (https://sketchfab.com/ronsalrich) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

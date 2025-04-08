@@ -1,0 +1,604 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2449,
+      "max": [
+        64.55580139160156,
+        -0.5221290588378906,
+        40.92274475097656
+      ],
+      "min": [
+        -51.15395736694336,
+        -2.609959363937378,
+        -23.996421813964844
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 29388,
+      "componentType": 5126,
+      "count": 2449,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2449,
+      "max": [
+        0.9902551174163818,
+        0.9943400621414185
+      ],
+      "min": [
+        0.0047441571950912476,
+        0.0036840885877609253
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 6384,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 58776,
+      "componentType": 5126,
+      "count": 2423,
+      "max": [
+        64.55580139160156,
+        2.609617233276367,
+        40.92274475097656
+      ],
+      "min": [
+        -51.15395736694336,
+        0.5217866897583008,
+        -23.996421813964844
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 87852,
+      "componentType": 5126,
+      "count": 2423,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 19592,
+      "componentType": 5126,
+      "count": 2423,
+      "max": [
+        0.9902551174163818,
+        0.9943400621414185
+      ],
+      "min": [
+        0.0047441571950912476,
+        0.0036840885877609253
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 25536,
+      "componentType": 5125,
+      "count": 6384,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 116928,
+      "componentType": 5126,
+      "count": 2449,
+      "max": [
+        64.55580139160156,
+        -3.6538748741149902,
+        40.92274475097656
+      ],
+      "min": [
+        -51.15395736694336,
+        -5.741705417633057,
+        -23.996421813964844
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 146316,
+      "componentType": 5126,
+      "count": 2449,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 38976,
+      "componentType": 5126,
+      "count": 2449,
+      "max": [
+        0.9902551174163818,
+        0.9943400621414185
+      ],
+      "min": [
+        0.0047441571950912476,
+        0.0036840885877609253
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 51072,
+      "componentType": 5125,
+      "count": 6384,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 175704,
+      "componentType": 5126,
+      "count": 2436,
+      "max": [
+        64.55580139160156,
+        5.741362571716309,
+        40.92274475097656
+      ],
+      "min": [
+        -51.15395736694336,
+        3.653532028198242,
+        -23.996421813964844
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 204936,
+      "componentType": 5126,
+      "count": 2436,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 58568,
+      "componentType": 5126,
+      "count": 2436,
+      "max": [
+        0.9902551174163818,
+        0.9943400621414185
+      ],
+      "min": [
+        0.0047441571950912476,
+        0.0036840885877609253
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 76608,
+      "componentType": 5125,
+      "count": 6384,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Logan S. (https://sketchfab.com/ronsalrich)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/pool-chairs-1dc5f81bb9cb42ceb5507c4fb31f6e1d",
+      "title": "Pool Chairs"
+    },
+    "generator": "Sketchfab-16.63.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 102144,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 78056,
+      "byteOffset": 102144,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 234168,
+      "byteOffset": 180200,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 414368,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/Black_Mat_baseColor.png"
+    },
+    {
+      "uri": "textures/Black_Mat_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/Blue_Mat_baseColor.png"
+    },
+    {
+      "uri": "textures/White_Mat_baseColor.png"
+    },
+    {
+      "uri": "textures/Wood_Mat_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Black_Mat",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Blue_Mat",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "White_Mat",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Wood_Mat",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 4
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Black Chair_Black Mat_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Blue Chair_Blue Mat_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "White Chair_White Mat_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Wood Chair_Wood Mat_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "ba3e9bd5dfec4f91bca74577d72d6902.fbx"
+    },
+    {
+      "children": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        11.758090019226074,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -3.757885691792089e-05,
+        -230.65737915038758,
+        0.0,
+        0.0,
+        11.75809001922592,
+        -1.915636014282624e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Black Chair"
+    },
+    {
+      "mesh": 0,
+      "name": "Black Chair_Black Mat_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        11.758090019226074,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -3.757885691792089e-05,
+        -230.65737915038758,
+        0.0,
+        0.0,
+        11.75809001922592,
+        -1.915636014282624e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Blue Chair"
+    },
+    {
+      "mesh": 1,
+      "name": "Blue Chair_Blue Mat_0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        11.758090019226074,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -3.757885691792089e-05,
+        -230.65737915038758,
+        0.0,
+        0.0,
+        11.75809001922592,
+        -1.915636014282624e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "White Chair"
+    },
+    {
+      "mesh": 2,
+      "name": "White Chair_White Mat_0"
+    },
+    {
+      "children": [
+        10
+      ],
+      "matrix": [
+        11.758090019226074,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -3.757885691792089e-05,
+        -230.65737915038758,
+        0.0,
+        0.0,
+        11.75809001922592,
+        -1.915636014282624e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Wood Chair"
+    },
+    {
+      "mesh": 3,
+      "name": "Wood Chair_Wood Mat_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    }
+  ]
+}

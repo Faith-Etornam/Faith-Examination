@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cyberpunk_ Motel_ Low
+* source:	https://sketchfab.com/3d-models/cyberpunk--motel--low-4bd60a8159394713af93cfc101a7a363
+* author:	JackSpector_Ink (https://sketchfab.com/jakku2001)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cyberpunk_ Motel_ Low" (https://sketchfab.com/3d-models/cyberpunk--motel--low-4bd60a8159394713af93cfc101a7a363) by JackSpector_Ink (https://sketchfab.com/jakku2001) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
