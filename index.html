@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Villa - A-Frame Experience</title>
+    <script src="./script/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+
+        <!-- Add ambient light to brighten the whole scene -->
+        <a-light type="ambient" color="#ffffff" intensity="0.3"></a-light>
+        
+        <!-- Increase intensity of directional light -->
+        <a-light type="directional" color="#ffffff" intensity="0.8" position="-1 2 1"></a-light>
+        
+        <!-- Assets -->
+        <a-assets>
+            <!-- Environment Textures -->
+            <img src="./textures/clear-sunny-sky.jpg" alt="clear-sunny-sky" id="outside-environment">
+            <img src="./textures/Erba_01_TileMat_baseColor.jpg" id="grass" alt="grass">
+
+            <!-- Material Textures -->
+            <img src="./textures/marble.jpg" id="marble-floor" alt="marble floor" crossorigin="anonymous">
+            <img src="./textures/wood-texture.jpg" id="wood-texture" alt="wood texture">
+            <img src="./textures/wall-texture.jpg" id="wall-texture" alt="wall texture">
+            <img src="./textures/white-fabric-texture.jpg" id="fabric-texture" alt="fabric texture">
+            <img src="./textures/kitchen-tile.jpg" id="kitchen-tiles" alt="kitchen tiles">
+            <!--  -->
+
+            <!-- Models -->
+              <a-asset-item id="my-car" src="./models/car/scene.gltf"></a-asset-item>
+             <a-asset-item id="tree" src="./models/Trees/scene.gltf"></a-asset-item>
+             <a-asset-item id="luxury-house" src="./models/motel/scene.gltf"></a-asset-item>
+            <a-asset-item id="house" src="./models/house/scene.gltf"></a-asset-item>
+             <a-asset-item id="flowers" src="./models/flowers/scene.gltf"></a-asset-item>
+             <a-asset-item id="pool-chairs" src="./models/pool-chairs/scene.gltf"></a-asset-item>
+             <a-asset-item id="potted-plant" src="./models/potted-plant/scene.gltf"></a-asset-item>
+
+        </a-assets>
+
+        <!-- Sky -->
+        <a-sky src="#outside-environment"></a-sky>
+
+        <a-entity gltf-model="#my-car"
+                     position="-13 -0.5 -5"></a-entity>
+
+       <a-entity gltf-model="#flowers"
+       position="10 -1.5 2"></a-entity>
+       <a-entity gltf-model="#flowers"
+       position="8 -1.5 2"></a-entity>
+       <a-entity gltf-model="#flowers"
+       position="6 -1.5 2"></a-entity>
+       <a-entity gltf-model="#flowers"
+       position="-6 -1.5 2"></a-entity>
+       <a-entity gltf-model="#flowers"
+       position="-8 -1.5 2"></a-entity>
+       <a-entity gltf-model="#flowers"
+       position="-4 -1.5 2"></a-entity>
+
+       <a-entity gltf-model="#pool-chairs" position="37 0 0" scale="0.5 0.5 0.6"></a-entity>
+                     
+        <a-entity gltf-model="#my-car"
+                     position="-17 -0.5 -5"
+                     color: red></a-entity>
+                     
+              <a-entity gltf-model="#tree"
+                     position="10 -1 -10"
+                     scale="0.1 0.1 0.1"></a-entity>
+
+              <a-entity gltf-model=""></a-entity>
+              
+              <a-entity gltf-model="#luxury-house"
+                     position="-100 -1 -8"
+                     scale="3 3 3"></a-entity>
+              
+              <a-entity gltf-model="#house"
+                     position="80 -5 8"
+                     scale="0.05 0.05 0.05"></a-entity>
+                     </a-entity>
+              <a-entity gltf-model="#house"
+                     position="160 -5 8"
+                     scale="0.05 0.05 0.05"></a-entity>
+                     
+              <a-entity gltf-model="#house"
+                     position="240 -5 8"
+                     scale="0.05 0.05 0.05"></a-entity>
+                     
+        
+        <!-- Ground -->
+        <a-plane src="#grass"
+                 height="6"
+                 depth="4"
+                 rotation="-90 0 0"
+                 scale="1000 1000"
+                 repeat="1000 1000"
+                 position="0 -1.5 -9">
+        </a-plane>
+
+        <!-- Luxurious Garage -->
+<a-entity id="luxury-garage" position="-15 -1.2 -10">
+    <!-- Garage Floor -->
+    <a-plane position="0 0 0" 
+             rotation="-90 0 0" 
+             width="10" 
+             height="15" 
+             material="src: #marble-floor; color: #ffffff; roughness: 0.2; metalness: 0.5; repeat: 5 5"
+             shadow="cast: true; receive: true">
+    </a-plane>
+
+    <!-- Garage Walls -->
+    <!-- Back Wall -->
+    <a-box position="0 2.5 -7.5" 
+           width="10" 
+           height="5" 
+           depth="0.2" 
+           material="src: #wall-texture; color: #e0e0e0; roughness: 0.3; metalness: 0.2; repeat: 5 2"
+           shadow="cast: true; receive: true">
+    </a-box>
+    <!-- Left Wall -->
+    <a-box position="-5 2.5 0" 
+           width="0.2" 
+           height="5" 
+           depth="15" 
+           material="src: #wall-texture; color: #e0e0e0; roughness: 0.3; metalness: 0.2; repeat: 2 5"
+           shadow="cast: true; receive: true">
+    </a-box>
+    <!-- Right Wall -->
+    <a-box position="5 2.5 0" 
+           width="0.2" 
+           height="5" 
+           depth="15" 
+           material="src: #wall-texture; color: #e0e0e0; roughness: 0.3; metalness: 0.2; repeat: 2 5"
+           shadow="cast: true; receive: true">
+    </a-box>
+
+    <!-- Glass Roof -->
+    <a-box position="0 5 0" 
+           width="10" 
+           height="0.2" 
+           depth="15" 
+           material="color: #b3e5fc; opacity: 0.5; metalness: 0.8; roughness: 0.1; transparent: true"
+           shadow="cast: true; receive: true">
+    </a-box>
+
+    
+
+    <!-- Lighting -->
+    <a-light type="spot" 
+             position="0 5 0" 
+             angle="60" 
+             intensity="0.4" 
+             color="#ffffff" 
+             target="#luxury-garage">
+    </a-light>
+    <a-light type="ambient" 
+             color="#ffffff" 
+             intensity="0.3">
+    </a-light>
+
+</a-entity>
+
+        <!-- Luxury House Structure -->
+<a-entity id="house" position="0 0.2 -8">
+    <!-- Main Structure -->
+    <a-box id="foundation" 
+           position="0 -0.75 0" 
+           width="20" 
+           height="1.5" 
+           depth="15" 
+           material="src: #marble-floor; repeat: 5 4"
+           shadow="cast: true; receive: true">
+    </a-box>
+    
+    <!-- External Walls -->
+    <a-entity id="exterior-walls">
+        <!-- Grand Entrance with Columns -->
+        <a-entity id="grand-entrance">
+            <!-- Main Facade with Stone Texture -->
+            <a-box position="0 2 7.45" 
+                   width="20" 
+                   height="7" 
+                   depth="0.1" 
+                   material="src: #wall-texture; color: #f5f5f5; repeat: 5 2"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            
+            <!-- Decorative Columns -->
+            <a-cylinder position="-4 1 7.8" 
+                        radius="0.3" 
+                        height="7" 
+                        material="color: #d7ccc8"
+                        shadow="cast: true; receive: true">
+            </a-cylinder>
+            <a-cylinder position="4 1 7.8" 
+                        radius="0.3" 
+                        height="7" 
+                        material="color: #d7ccc8"
+                        shadow="cast: true; receive: true">
+            </a-cylinder>
+            
+            <!-- Double Doors with Glass Panels -->
+            <a-box position="-0.8 0.7 7.6" 
+                   width="1.6" 
+                   height="4" 
+                   depth="0.1" 
+                   material="color: #5d4037; metalness: 0.8; roughness: 0.3"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <a-box position="0.8 0.7 7.6" 
+                   width="1.6" 
+                   height="4" 
+                   depth="0.1" 
+                   material="color: #5d4037; metalness: 0.8; roughness: 0.3"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            
+            <!-- Decorative Door Handles -->
+            <a-entity position="-1.5 1 7.7">
+                <a-torus radius="0.03" 
+                         radius-tubular="0.05" 
+                         arc="180" 
+                         material="color: #ffd700"
+                         rotation="0 90 0"
+                         shadow="cast: true; receive: true">
+                </a-torus>
+            </a-entity>
+            <a-entity position="1.5 1 7.7">
+                <a-torus radius="0.03" 
+                         radius-tubular="0.05" 
+                         arc="180" 
+                         material="color: #ffd700"
+                         rotation="0 90 0"
+                         shadow="cast: true; receive: true">
+                </a-torus>
+            </a-entity>
+            
+            <!-- Portico Roof -->
+            <a-box position="0 3.6 7.2" 
+                   width="8" 
+                   height="0.2" 
+                   depth="1" 
+                   material="color: #3e2723"
+                   shadow="cast: true; receive: true">
+            </a-box>
+        </a-entity>
+        
+        <!-- Back Wall -->
+        <a-box position="0 2 -7.45" 
+               width="20" 
+               height="7" 
+               depth="0.1" 
+               material="src: #wall-texture; repeat: 5 2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Left Wall with Windows -->
+        <a-box position="-9.95 2 0" 
+               width="0.1" 
+               height="7" 
+               depth="15" 
+               material="src: #wall-texture; repeat: 4 2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <!-- Left Wall Windows -->
+        <a-box position="-9.95 2 -3" 
+               width="0.15" 
+               height="2" 
+               depth="3" 
+               material="color: #b3e5fc; opacity: 0.7"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <a-box position="-9.95 2 3" 
+               width="0.15" 
+               height="2" 
+               depth="3" 
+               material="color: #b3e5fc; opacity: 0.7"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Right Wall with Windows -->
+        <a-box position="9.95 2 0" 
+               width="0.1" 
+               height="7" 
+               depth="15" 
+               material="src: #wall-texture; repeat: 4 2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <!-- Right Wall Windows -->
+        <a-box position="9.95 2 -3" 
+               width="0.15" 
+               height="2" 
+               depth="3" 
+               material="color: #b3e5fc; opacity: 0.7"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <a-box position="9.95 2 3" 
+               width="0.15" 
+               height="2" 
+               depth="3" 
+               material="color: #b3e5fc; opacity: 0.7"
+               shadow="cast: true; receive: true">
+        </a-box>
+    </a-entity>
+    
+    <!-- Interior Walls -->
+    <a-entity id="interior-walls">
+        <!-- Wall between Living Room and Kitchen -->
+        <a-box position="-3 2 0" 
+               width="0.1" 
+               height="7" 
+               depth="15" 
+               material="src: #wall-texture; repeat: 4 2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <!-- Doorway between Living Room and Kitchen -->
+        <a-box position="-3 0.5 3" 
+               width="0.2" 
+               height="4" 
+               depth="2" 
+               material="color: #ffffff; opacity: 0"
+               shadow="cast: false; receive: false">
+        </a-box>
+        
+        <!-- Wall between Kitchen and Bedroom -->
+        <a-box position="3 2 0" 
+               width="0.1" 
+               height="7" 
+               depth="15" 
+               material="src: #wall-texture; repeat: 4 2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <!-- Doorway between Kitchen and Bedroom -->
+        <a-box position="3 0.5 -3" 
+               width="0.2" 
+               height="4" 
+               depth="2" 
+               material="color: #ffffff; opacity: 0"
+               shadow="cast: false; receive: false">
+        </a-box>
+    </a-entity>
+    
+    <!-- Living Room (Left Section) -->
+    <a-entity id="living-room" position="-6.5 0 0">
+        <!-- Floor -->
+        <a-plane position="0 0 0" 
+                 rotation="-90 0 0" 
+                 width="7" 
+                 height="15" 
+                 material="src: #marble-floor; repeat: 2 4"
+                 shadow="cast: false; receive: true">
+        </a-plane>
+        
+        <!-- Furniture -->
+        <!-- Sofa -->
+        <a-entity id="sofa" position="0 0 3" rotation="0 -180 0">
+            <a-box position="0 0.4 0" 
+                   width="5" 
+                   height="0.8" 
+                   depth="2" 
+                   material="src: #fabric-texture; color: #3949ab; repeat: 2 1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <a-box position="0 0.8 -0.9" 
+                   width="5" 
+                   height="1.6" 
+                   depth="0.2" 
+                   material="src: #fabric-texture; color: #3949ab; repeat: 2 1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Throw pillows -->
+            <a-box position="-1.5 0.9 0.5" 
+                   width="0.8" 
+                   height="0.6" 
+                   depth="0.4" 
+                   material="src: #fabric-texture; color: #5c6bc0; repeat: 1 1"
+                   rotation="0 -15 0"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <a-box position="1.5 0.9 0.5" 
+                   width="0.8" 
+                   height="0.6" 
+                   depth="0.4" 
+                   material="src: #fabric-texture; color: #5c6bc0; repeat: 1 1"
+                   rotation="0 15 0"
+                   shadow="cast: true; receive: true">
+            </a-box>
+        </a-entity>
+        
+        <!-- Coffee Table -->
+        <a-entity id="coffee-table" position="0 0.4 0">
+            <a-box position="0 0.2 0" 
+                   width="3" 
+                   height="0.1" 
+                   depth="1.5" 
+                   material="src: #wood-texture; color: #5d4037; repeat: 1 1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <a-box position="-1.4 0 0" 
+                   width="0.1" 
+                   height="0.4" 
+                   depth="1.5" 
+                   material="src: #wood-texture; color: #5d4037; repeat: 1 1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <a-box position="1.4 0 0" 
+                   width="0.1" 
+                   height="0.4" 
+                   depth="1.5" 
+                   material="src: #wood-texture; color: #5d4037; repeat: 1 1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Decorative items on coffee table -->
+            <a-box position="0.5 0.3 0.3" 
+                   width="0.5" 
+                   height="0.2" 
+                   depth="0.7" 
+                   material="color: #9e9e9e"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <a-sphere position="-0.5 0.4 -0.3" 
+                      radius="0.2" 
+                      material="color: #4db6ac"
+                      shadow="cast: true; receive: true">
+            </a-sphere>
+        </a-entity>
+        
+        <!-- TV Unit -->
+        <a-entity id="tv-unit" position="0 0 -6">
+            <!-- TV Cabinet -->
+            <a-box position="0 0.5 0" 
+                   width="4" 
+                   height="1" 
+                   depth="1" 
+                   material="src: #wood-texture; color: #3e2723; repeat: 2 1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- TV Screen -->
+            <a-box position="0 2 0.1" 
+                   width="5" 
+                   height="3" 
+                   depth="0.1" 
+                   material="color: #212121"
+                   shadow="cast: true; receive: true">
+            </a-box>
+        </a-entity>
+        
+        <!-- Floor Lamp -->
+        <a-entity id="floor-lamp" position="-2.5 0 -4">
+            <a-cylinder position="0 2 0" 
+                        radius="0.05" 
+                        height="4" 
+                        material="color: #9e9d24"
+                        shadow="cast: true; receive: true">
+            </a-cylinder>
+            <a-cone position="0 3.5 0" 
+                    radius-bottom="0.6" 
+                    radius-top="0.1" 
+                    height="1" 
+                    material="color: #f5f5f5; opacity: 0.9"
+                    shadow="cast: true; receive: true">
+            </a-cone>
+            <a-light type="point" 
+                     position="0 3.2 0" 
+                     color="#fff9c4" 
+                     intensity="1.2" 
+                     distance="15">
+            </a-light>
+        </a-entity>
+        
+        <!-- Potted Plant -->
+        <a-entity id="potted-plant" position="2.5 0 -4">
+            <a-cylinder position="0 0.3 0" 
+                        radius="0.3" 
+                        height="0.6" 
+                        material="color: #795548"
+                        shadow="cast: true; receive: true">
+            </a-cylinder>
+            <a-sphere position="0 1.2 0" 
+                      radius="0.8" 
+                      material="color: #558b2f"
+                      shadow="cast: true; receive: true">
+            </a-sphere>
+        </a-entity>
+        
+        <!-- Ceiling Light -->
+        <a-entity id="ceiling-light" position="0 5 0">
+            <a-cylinder position="0 0 0" 
+                        radius="0.3" 
+                        height="0.1" 
+                        material="color: #e0e0e0"
+                        shadow="cast: true; receive: true">
+            </a-cylinder>
+            <a-light type="point" 
+                     position="0 -0.5 0" 
+                     color="#ffffff" 
+                     intensity="1.0" 
+                     distance="15">
+            </a-light>
+        </a-entity>
+    </a-entity>
+    
+    <!-- Kitchen (Middle Section) -->
+    <a-entity id="kitchen" position="0 0 0">
+        <!-- Floor -->
+        <a-plane position="0 0 0" 
+                 rotation="-90 0 0" 
+                 width="6" 
+                 height="15" 
+                 material="src: #kitchen-tiles; repeat: 3 8"
+                 shadow="cast: false; receive: true">
+        </a-plane>
+        
+        <!-- Kitchen Counters -->
+        <a-entity id="kitchen-counters" position="0 0 -4">
+            <!-- Base Counters -->
+            <a-box position="0 0.75 0" 
+                   width="6" 
+                   height="1.5" 
+                   depth="1.5" 
+                   material="src: #wood-texture; color: #d7ccc8; repeat: 3 1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Counter Top -->
+            <a-box position="0 1.55 0" 
+                   width="6" 
+                   height="0.1" 
+                   depth="1.5" 
+                   material="color: #eceff1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Sink -->
+            <a-box position="-1 1.6 0" 
+                   width="1.5" 
+                   height="0.05" 
+                   depth="1" 
+                   material="color: #b0bec5"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Faucet -->
+            <a-entity position="-1 1.65 -0.3">
+                <a-cylinder position="0 0.2 0" 
+                            radius="0.03" 
+                            height="0.4" 
+                            material="color: #b0bec5"
+                            shadow="cast: true; receive: true">
+                </a-cylinder>
+                <a-cylinder position="0 0.35 0.15" 
+                            radius="0.02" 
+                            height="0.3" 
+                            rotation="90 0 0"
+                            material="color: #b0bec5"
+                            shadow="cast: true; receive: true">
+                </a-cylinder>
+            </a-entity>
+            <!-- Stove -->
+            <a-box position="1 1.56 0" 
+                   width="1.5" 
+                   height="0.05" 
+                   depth="1" 
+                   material="color: #263238"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Burners -->
+            <a-torus position="0.7 1.57 -0.2" 
+                     radius="0.15" 
+                     radius-tubular="0.02" 
+                     material="color: #37474f"
+                     shadow="cast: true; receive: true">
+            </a-torus>
+            <a-torus position="1.3 1.57 -0.2" 
+                     radius="0.15" 
+                     radius-tubular="0.02" 
+                     material="color: #37474f"
+                     shadow="cast: true; receive: true">
+            </a-torus>
+            <a-torus position="0.7 1.57 0.2" 
+                     radius="0.15" 
+                     radius-tubular="0.02" 
+                     material="color: #37474f"
+                     shadow="cast: true; receive: true">
+            </a-torus>
+            <a-torus position="1.3 1.57 0.2" 
+                     radius="0.15" 
+                     radius-tubular="0.02" 
+                     material="color: #37474f"
+                     shadow="cast: true; receive: true">
+            </a-torus>
+        </a-entity>
+        
+        <!-- Kitchen Island -->
+        <a-entity id="kitchen-island" position="0 0 0">
+            <!-- Island Base -->
+            <a-box position="0 0.75 0" 
+                   width="3" 
+                   height="1.5" 
+                   depth="2" 
+                   material="src: #wood-texture; color: #d7ccc8; repeat: 2 1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Island Top -->
+            <a-box position="0 1.55 0" 
+                   width="3" 
+                   height="0.1" 
+                   depth="2" 
+                   material="color: #eceff1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Bar Stools -->
+            <a-entity id="bar-stool-1" position="-1 0 1.5">
+                <a-cylinder position="0 0.5 0" 
+                            radius="0.05" 
+                            height="1" 
+                            material="color: #b0bec5"
+                            shadow="cast: true; receive: true">
+                </a-cylinder>
+                <a-cylinder position="0 1 0" 
+                            radius="0.25" 
+                            height="0.1" 
+                            material="color: #5d4037"
+                            shadow="cast: true; receive: true">
+                </a-cylinder>
+            </a-entity>
+            <a-entity id="bar-stool-2" position="1 0 1.5">
+                <a-cylinder position="0 0.5 0" 
+                            radius="0.05" 
+                            height="1" 
+                            material="color: #b0bec5"
+                            shadow="cast: true; receive: true">
+                </a-cylinder>
+                <a-cylinder position="0 1 0" 
+                            radius="0.25" 
+                            height="0.1" 
+                            material="color: #5d4037"
+                            shadow="cast: true; receive: true">
+                </a-cylinder>
+            </a-entity>
+            
+            <!-- Decorative Bowl -->
+            <a-entity id="fruit-bowl" position="0 1.7 0">
+                <a-sphere position="0 0 0" 
+                          radius="0.4" 
+                          theta-length="90" 
+                          material="color: #cfd8dc"
+                          shadow="cast: true; receive: true">
+                </a-sphere>
+                
+            </a-entity>
+        </a-entity>
+        
+        <!-- Upper Cabinets -->
+        <a-entity id="upper-cabinets" position="0 0 -4">
+            <a-box position="0 3.5 0.2" 
+                   width="6" 
+                   height="2" 
+                   depth="1" 
+                   material="src: #wood-texture; color: #d7ccc8; repeat: 3 1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+        </a-entity>
+        
+        <!-- Refrigerator -->
+        <a-entity id="refrigerator" position="2.5 0 -6">
+            <a-box position="0 1.75 0" 
+                   width="1.5" 
+                   height="3.5" 
+                   depth="1" 
+                   material="color: #b0bec5"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Handle -->
+            <a-box position="0.6 1.75 0.5" 
+                   width="0.1" 
+                   height="0.5" 
+                   depth="0.1" 
+                   material="color: #78909c"
+                   shadow="cast: true; receive: true">
+            </a-box>
+        </a-entity>
+        
+        <!-- Ceiling Light -->
+        <a-entity id="kitchen-ceiling-light" position="0 5 0">
+            <a-cylinder position="0 0 0" 
+                        radius="0.3" 
+                        height="0.1" 
+                        material="color: #e0e0e0"
+                        shadow="cast: true; receive: true">
+            </a-cylinder>
+            <a-light type="point" 
+                     position="0 -0.5 0" 
+                     color="#ffffff" 
+                     intensity="1.2" 
+                     distance="15">
+            </a-light>
+        </a-entity>
+    </a-entity>
+    
+    <!-- Bedroom (Right Section) - Ground Floor -->
+    <a-entity id="bedroom-ground" position="6.5 0 0">
+        <!-- Floor -->
+        <a-plane position="0 0 0" 
+                 rotation="-90 0 0" 
+                 width="7" 
+                 height="15" 
+                 material="src: #wood-texture; color: #8d6e63; repeat: 3 8"
+                 shadow="cast: false; receive: true">
+        </a-plane>
+        
+        <!-- Bed -->
+        <a-entity id="bed" position="0 0 0">
+            <!-- Bed Frame -->
+            <a-box position="0 0.3 0" 
+                   width="4" 
+                   height="0.6" 
+                   depth="6" 
+                   material="src: #wood-texture; color: #5d4037; repeat: 2 3"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Mattress -->
+            <a-box position="0 0.7 0" 
+                   width="3.8" 
+                   height="0.4" 
+                   depth="5.8" 
+                   material="color: #eceff1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Bedding -->
+            <a-box position="0 0.95 -1" 
+                   width="3.8" 
+                   height="0.1" 
+                   depth="3.8" 
+                   material="src: #fabric-texture; color: #1a237e; repeat: 2 2"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Pillows -->
+            <a-box position="0 1.1 -2.5" 
+                   width="3.4" 
+                   height="0.4" 
+                   depth="0.8" 
+                   material="color: #ffffff"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <a-box position="-1 1.1 -2.5" 
+                   width="1.4" 
+                   height="0.4" 
+                   depth="0.8" 
+                   material="src: #fabric-texture; color: #303f9f; repeat: 1 1"
+                   rotation="0 -5 0"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <a-box position="1 1.1 -2.5" 
+                   width="1.4" 
+                   height="0.4" 
+                   depth="0.8" 
+                   material="src: #fabric-texture; color: #303f9f; repeat: 1 1"
+                   rotation="0 5 0"
+                   shadow="cast: true; receive: true">
+            </a-box>
+            <!-- Headboard -->
+            <a-box position="0 1.5 -3" 
+                   width="4" 
+                   height="2" 
+                   depth="0.2" 
+                   material="src: #wood-texture; color: #4e342e; repeat: 2 1"
+                   shadow="cast: true; receive: true">
+            </a-box>
+        </a-entity>
+        
+        <!-- Nightstand -->
+        <a-entity id="nightstand-left" position="-2.2 0 -2">
+            <a-box position="0 0.7 0" 
+                   width="1" 
+                   height="1.4" 
+                   depth="1"
+                   material="src: #wood-texture; color: #5d4037"
+                   shadow="cast: true; receive: true">
+            </a-box>
+        </a-entity>
+    </a-entity>
+    
+    <!-- First Floor Section - Positioned above ground floor -->
+    <a-entity id="first-floor" position="0 6.5 0">
+    <!-- Floor Structure -->
+    <a-box id="first-floor-floor" 
+           position="0 -0.5 0" 
+           width="20" 
+           height="1" 
+           depth="15" 
+           material="src: #wood-texture; color: #8d6e63; repeat: 5 4"
+           shadow="cast: true; receive: true">
+    </a-box>
+    
+    <!-- Walls -->
+    <a-entity id="first-floor-walls">
+        <!-- Front Wall with Window -->
+        <a-box position="0 3 7.45" 
+               width="20" 
+               height="6" 
+               depth="0.1" 
+               material="src: #wall-texture; repeat: 5 2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <!-- Front Window -->
+        <a-box position="0 3 7.5" 
+               width="5" 
+               height="3" 
+               depth="0.15" 
+               material="color: #b3e5fc; opacity: 0.7"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Back Wall -->
+        <a-box position="0 3 -7.45" 
+               width="20" 
+               height="6" 
+               depth="0.1" 
+               material="src: #wall-texture; repeat: 5 2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Left Wall with Window -->
+        <a-box position="-9.95 3 0" 
+               width="0.1" 
+               height="6" 
+               depth="15" 
+               material="src: #wall-texture; repeat: 4 2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <a-box position="-9.95 3 -3" 
+               width="0.15" 
+               height="2" 
+               depth="3" 
+               material="color: #b3e5fc; opacity: 0.7"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Right Wall with Window -->
+        <a-box position="9.95 3 0" 
+               width="0.1" 
+               height="6" 
+               depth="15" 
+               material="src: #wall-texture; repeat: 4 2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <a-box position="9.95 3 3" 
+               width="0.15" 
+               height="2" 
+               depth="3" 
+               material="color: #b3e5fc; opacity: 0.7"
+               shadow="cast: true; receive: true">
+        </a-box>
+    </a-entity>
+    
+    <!-- Bed -->
+    <a-entity id="bed" position="-6 0 -5">
+        <!-- Bed Frame -->
+        <a-box position="0 0.35 0" 
+               width="5" 
+               height="0.7" 
+               depth="7" 
+               material="src: #wood-texture; color: #5d4037; repeat: 2 3"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Mattress -->
+        <a-box position="0 0.95 0" 
+               width="4.8" 
+               height="0.5" 
+               depth="6.8" 
+               material="color: #e0e0e0"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Pillow 1 -->
+        <a-box position="-1.3 1.3 -2.5" 
+               width="2" 
+               height="0.4" 
+               depth="1.5" 
+               material="color: #f5f5f5"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Pillow 2 -->
+        <a-box position="1.3 1.3 -2.5" 
+               width="2" 
+               height="0.4" 
+               depth="1.5" 
+               material="color: #f5f5f5"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Blanket -->
+        <a-box position="0 1.25 1.3" 
+               width="4.6" 
+               height="0.2" 
+               depth="4" 
+               material="color: #5c6bc0"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Headboard -->
+        <a-box position="0 2 -3.2" 
+               width="5" 
+               height="2.8" 
+               depth="0.3" 
+               material="src: #wood-texture; color: #5d4037; repeat: 2 1"
+               shadow="cast: true; receive: true">
+        </a-box>
+    </a-entity>
+    
+    <!-- Bedside Table -->
+    <a-entity id="bedside-table" position="-9 0 -5">
+        <!-- Table Base -->
+        <a-box position="0 1 0" 
+               width="1.5" 
+               height="2" 
+               depth="1.5" 
+               material="src: #wood-texture; color: #5d4037; repeat: 1 1"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Drawer -->
+        <a-box position="0 0.5 0.05" 
+               width="1.4" 
+               height="0.5" 
+               depth="1.4" 
+               material="src: #wood-texture; color: #4e342e; repeat: 1 1"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Drawer Handle -->
+        <a-cylinder position="0 0.5 0.8" 
+                   radius="0.05" 
+                   height="0.6" 
+                   rotation="90 0 0" 
+                   material="color: #bdbdbd"
+                   shadow="cast: true; receive: true">
+        </a-cylinder>
+    </a-entity>
+    
+    <!-- Lamp on Bedside Table -->
+    <a-entity id="lamp" position="-9 2.1 -5">
+        <!-- Lamp Base -->
+        <a-cylinder position="0 0 0" 
+                   radius="0.3" 
+                   height="0.2" 
+                   material="color: #3e2723"
+                   shadow="cast: true; receive: true">
+        </a-cylinder>
+        
+        <!-- Lamp Stem -->
+        <a-cylinder position="0 0.6 0" 
+                   radius="0.05" 
+                   height="1" 
+                   material="color: #5d4037"
+                   shadow="cast: true; receive: true">
+        </a-cylinder>
+        
+        <!-- Lamp Shade -->
+        <a-entity position="0 1.2 0">
+            <a-cylinder position="0 0.3 0" 
+                       radius-top="0.7" 
+                       radius-bottom="0.5" 
+                       height="0.6" 
+                       open-ended="true" 
+                       material="color: #fff8e1; opacity: 0.9; side: double"
+                       shadow="cast: true; receive: true">
+            </a-cylinder>
+        </a-entity>
+        
+        <!-- Light Source -->
+        <a-light type="point" 
+                position="0 1.2 0" 
+                color="#fff8e1" 
+                intensity="0.5" 
+                distance="5">
+        </a-light>
+    </a-entity>
+    
+    <!-- Small Area Rug -->
+    <a-entity id="rug" position="-6 0.01 -1">
+        <a-plane rotation="-90 0 0" 
+                width="6" 
+                height="4" 
+                material="color: #7986cb; opacity: 0.9"
+                shadow="cast: false; receive: true">
+        </a-plane>
+    </a-entity>
+    
+    <!-- Small Bookshelf -->
+    <a-entity id="bookshelf" position="7 0 -6">
+        <!-- Main Structure -->
+        <a-box position="0 1.5 0" 
+               width="4" 
+               height="3" 
+               depth="1" 
+               material="src: #wood-texture; color: #5d4037; repeat: 2 1.5"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Shelves -->
+        <a-box position="0 0.6 0" 
+               width="3.8" 
+               height="0.1" 
+               depth="0.9" 
+               material="src: #wood-texture; color: #3e2723; repeat: 1 1"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <a-box position="0 1.5 0" 
+               width="3.8" 
+               height="0.1" 
+               depth="0.9" 
+               material="src: #wood-texture; color: #3e2723; repeat: 1 1"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <a-box position="0 2.4 0" 
+               width="3.8" 
+               height="0.1" 
+               depth="0.9" 
+               material="src: #wood-texture; color: #3e2723; repeat: 1 1"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Books -->
+        <!-- Bottom Shelf Books -->
+        <a-box position="-1 0.35 0" 
+               width="1.5" 
+               height="0.5" 
+               depth="0.7" 
+               material="color: #c62828"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <a-box position="1 0.35 0" 
+               width="1.2" 
+               height="0.5" 
+               depth="0.7" 
+               material="color: #2196f3"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Middle Shelf Books -->
+        <a-box position="-0.8 1.25 0" 
+               width="2" 
+               height="0.4" 
+               depth="0.7" 
+               material="color: #388e3c"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <a-box position="1 1.25 0" 
+               width="1" 
+               height="0.4" 
+               depth="0.7" 
+               material="color: #ffa000"
+               shadow="cast: true; receive: true">
+        </a-box>
+        
+        <!-- Top Shelf Books -->
+        <a-box position="0 2.15 0" 
+               width="3" 
+               height="0.4" 
+               depth="0.7" 
+               material="color: #7b1fa2"
+               shadow="cast: true; receive: true">
+        </a-box>
+    </a-entity>
+</a-entity>
+  </a-entity>            
+
+                <a-entity id="luxury-swimming-pool" position="25 -0.5 0">
+    <!-- Pool structure - larger for luxury feel -->
+    <a-entity id="pool-shell">
+        <!-- Bottom -->
+        <a-plane position="0 -3 0"
+                 rotation="-90 0 0"
+                 width="16"
+                 height="12"
+                 material="color: #e0e0e0; roughness: 0.3; metalness: 0.2"
+                 shadow="cast: true; receive: true">
+        </a-plane>
+        <!-- Front Wall -->
+        <a-plane position="0 -1.5 6"
+                 rotation="0 0 0"
+                 width="16"
+                 height="3"
+                 material="color: #e0e0e0; roughness: 0.3; metalness: 0.2"
+                 shadow="cast: true; receive: true">
+        </a-plane>
+        <!-- Back Wall -->
+        <a-plane position="0 -1.5 -6"
+                 rotation="0 180 0"
+                 width="16"
+                 height="3"
+                 material="color: #e0e0e0; roughness: 0.3; metalness: 0.2"
+                 shadow="cast: true; receive: true">
+        </a-plane>
+        <!-- Left Wall -->
+        <a-plane position="-8 -1.5 0"
+                 rotation="0 90 0"
+                 width="12"
+                 height="3"
+                 material="color: #e0e0e0; roughness: 0.3; metalness: 0.2"
+                 shadow="cast: true; receive: true">
+        </a-plane>
+        <!-- Right Wall -->
+        <a-plane position="8 -1.5 0"
+                 rotation="0 -90 0"
+                 width="12"
+                 height="3"
+                 material="color: #e0e0e0; roughness: 0.3; metalness: 0.2"
+                 shadow="cast: true; receive: true">
+        </a-plane>
+    </a-entity>
+    
+    <!-- Water surface with luxury deep blue color -->
+    <a-plane id="water-surface" 
+            position="0 -0.1 0" 
+            rotation="-90 0 0" 
+            width="14.5" 
+            height="11.5" 
+            material="color: #0077be; opacity: 0.85; metalness: 0.4; roughness: 0.1">
+        <!-- Enhanced water animations -->
+        <a-animation attribute="material.opacity" 
+                     from="0.85" 
+                     to="0.95" 
+                     direction="alternate" 
+                     dur="5000" 
+                     repeat="indefinite" 
+                     easing="ease-in-out">
+        </a-animation>
+        <a-animation attribute="material.emissive" 
+                     from="#005a87" 
+                     to="#0077be" 
+                     direction="alternate" 
+                     dur="4000" 
+                     repeat="indefinite" 
+                     easing="ease-in-out">
+        </a-animation>
+    </a-plane> 
+    
+    <!-- Second water layer for luxury depth effect -->
+    <a-plane position="0 -0.2 0" 
+            rotation="-90 0 0" 
+            width="14.5" 
+            height="11.5" 
+            material="color: #005f94; opacity: 0.7; metalness: 0.4; roughness: 0.1">
+        <!-- Offset animation timing -->
+        <a-animation attribute="material.opacity" 
+                     from="0.7" 
+                     to="0.8" 
+                     direction="alternate" 
+                     dur="5500" 
+                     repeat="indefinite" 
+                     easing="ease-in-out">
+        </a-animation>
+    </a-plane>
+    
+    <!-- Third water layer for deeper luxury effect -->
+    <a-plane position="0 -0.3 0" 
+            rotation="-90 0 0" 
+            width="14.5" 
+            height="11.5" 
+            material="color: #00477e; opacity: 0.5; metalness: 0.5; roughness: 0.1">
+    </a-plane>
+    
+    <!-- Enhanced water ripple animations -->
+    <a-entity id="ripple-1" position="2 -0.05 1">
+        <a-ring radius-inner="0.1" 
+                radius-outer="0.6" 
+                rotation="-90 0 0" 
+                material="color: #0077be; opacity: 0.5; side: double; transparent: true">
+            <a-animation attribute="scale" 
+                         from="0.1 0.1 0.1" 
+                         to="4 4 1" 
+                         dur="4000" 
+                         repeat="indefinite" 
+                         easing="linear">
+            </a-animation>
+            <a-animation attribute="material.opacity" 
+                         from="0.5" 
+                         to="0" 
+                         dur="4000" 
+                         repeat="indefinite" 
+                         easing="linear">
+            </a-animation>
+        </a-ring>
+    </a-entity>
+    
+    <a-entity id="ripple-2" position="-3 -0.05 -2">
+        <a-ring radius-inner="0.1" 
+                radius-outer="0.6" 
+                rotation="-90 0 0" 
+                material="color: #0077be; opacity: 0.5; side: double; transparent: true">
+            <a-animation attribute="scale" 
+                         from="0.1 0.1 0.1" 
+                         to="4 4 1" 
+                         dur="5000" 
+                         begin="1500"
+                         repeat="indefinite" 
+                         easing="linear">
+            </a-animation>
+            <a-animation attribute="material.opacity" 
+                         from="0.5" 
+                         to="0" 
+                         dur="5000" 
+                         begin="1500"
+                         repeat="indefinite" 
+                         easing="linear">
+            </a-animation>
+        </a-ring>
+    </a-entity>
+    
+    <a-entity id="ripple-3" position="4 -0.05 -3">
+        <a-ring radius-inner="0.1" 
+                radius-outer="0.6" 
+                rotation="-90 0 0" 
+                material="color: #0077be; opacity: 0.5; side: double; transparent: true">
+            <a-animation attribute="scale" 
+                         from="0.1 0.1 0.1" 
+                         to="4 4 1" 
+                         dur="4500" 
+                         begin="2500"
+                         repeat="indefinite" 
+                         easing="linear">
+            </a-animation>
+            <a-animation attribute="material.opacity" 
+                         from="0.5" 
+                         to="0" 
+                         dur="4500" 
+                         begin="2500"
+                         repeat="indefinite" 
+                         easing="linear">
+            </a-animation>
+        </a-ring>
+    </a-entity>
+    
+    <!-- Luxury marble pool deck -->
+    <a-entity id="luxury-pool-deck">
+        <a-box position="0 0 6.5" 
+               width="17" 
+               height="0.3" 
+               depth="2" 
+               material="color: #f5f5f5; src: #wood-texture; repeat: 5 2; roughness: 0.2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <a-box position="0 0 -6.5" 
+               width="17" 
+               height="0.3" 
+               depth="2" 
+               material="color: #f5f5f5; src: #wood-texture; repeat: 5 2; roughness: 0.2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <a-box position="8.5 0 0" 
+               width="2" 
+               height="0.3" 
+               depth="12" 
+               material="color: #f5f5f5; src: #wood-texture; repeat: 5 2; roughness: 0.2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <a-box position="-8.5 0 0" 
+               width="2" 
+               height="0.3" 
+               depth="12" 
+               material="color: #f5f5f5; src: #wood-texture; repeat: 5 2; roughness: 0.2"
+               shadow="cast: true; receive: true">
+        </a-box>
+    </a-entity>
+    
+
+    <!-- Infinity edge feature -->
+    <a-entity id="infinity-edge" position="6 -1.8 0">
+        <a-box position="0 0 0" 
+               width="1" 
+               height="0.1" 
+               depth="10" 
+               material="color: #0077be; opacity: 0.9; metalness: 0.5; roughness: 0">
+        </a-box>
+        <a-entity position="0.6 -0.5 0">
+            <a-plane position="0 0 0" 
+                    rotation="-90 0 0" 
+                    width="0.4" 
+                    height="10" 
+                    material="color: #0077be; opacity: 0.9">
+                <a-animation attribute="position" 
+                             from="0 0 0" 
+                             to="0 -0.4 0" 
+                             dur="2000" 
+                             repeat="indefinite" 
+                             easing="linear">
+                </a-animation>
+                <a-animation attribute="material.opacity" 
+                             from="0.9" 
+                             to="0.7" 
+                             dur="2000" 
+                             repeat="indefinite" 
+                             easing="linear">
+                </a-animation>
+            </a-plane>
+        </a-entity>
+    </a-entity>
+    
+    <!-- Luxury pool toys -->
+    <a-entity id="luxury-float" position="2 -0.05 -1">
+        <a-torus position="0 0 0" 
+                 radius="1.2" 
+                 radius-tubular="0.25" 
+                 material="color: red; metalness: 0.3; roughness: 0.5">
+            <a-animation attribute="position" 
+                         from="0 0 0" 
+                         to="0 0.15 0" 
+                         direction="alternate" 
+                         dur="3000" 
+                         repeat="indefinite" 
+                         easing="ease-in-out">
+            </a-animation>
+            <a-animation attribute="rotation" 
+                         from="0 0 0" 
+                         to="5 0 5" 
+                         direction="alternate" 
+                         dur="4000" 
+                         repeat="indefinite" 
+                         easing="ease-in-out">
+            </a-animation>
+        </a-torus>
+    </a-entity>
+    
+    <!-- Premium beach ball -->
+    <a-entity id="luxury-beach-ball" position="-3 -0.05 -2.5">
+        <a-sphere radius="0.6" 
+                 material="color: white; metalness: 0.1; roughness: 0.8">
+            <a-animation attribute="position" 
+                         from="0 0 0" 
+                         to="0 0.18 0" 
+                         direction="alternate" 
+                         dur="2500" 
+                         repeat="indefinite" 
+                         easing="ease-in-out">
+            </a-animation>
+            <a-animation attribute="rotation" 
+                         from="0 0 0" 
+                         to="0 360 0" 
+                         dur="10000" 
+                         repeat="indefinite" 
+                         easing="linear">
+            </a-animation>
+        </a-sphere>
+        
+        <!-- Beach ball stripes - attaching to parent for animation -->
+        <a-entity>
+            <a-animation attribute="position" 
+                         from="0 0 0" 
+                         to="0 0.18 0" 
+                         direction="alternate" 
+                         dur="2500" 
+                         repeat="indefinite" 
+                         easing="ease-in-out">
+            </a-animation>
+            <a-animation attribute="rotation" 
+                         from="0 0 0" 
+                         to="0 360 0" 
+                         dur="10000" 
+                         repeat="indefinite" 
+                         easing="linear">
+            </a-animation>
+            
+            <a-sphere radius="0.61" 
+                     theta-length="30"
+                     material="color: #0077be; side: double">
+            </a-sphere>
+            
+            <a-sphere radius="0.61" 
+                     theta-length="30"
+                     rotation="0 60 0"
+                     material="color: #FFFFFF; side: double">
+            </a-sphere>
+            
+            <a-sphere radius="0.61" 
+                     theta-length="30"
+                     rotation="0 120 0"
+                     material="color: #0077be; side: double">
+            </a-sphere>
+        </a-entity>
+    </a-entity>
+    
+    <!-- Luxury poolside furniture -->
+    <a-entity id="luxury-swimming-pool" position="15 -0.5 0">
+    <!-- Pool Structure -->
+    <a-box id="pool-shell"
+           position="0 -1.8 0"
+           width="18"
+           height="4"
+           depth="14"
+           material="src: #marble-floor; color: #ffffff; roughness: 0.1; metalness: 0.3; repeat: 5 5"
+           shadow="cast: true; receive: true">
+    </a-box>
+
+    <!-- Shallow Lounging Area -->
+    <a-box id="shallow-area"
+           position="-4 -0.5 4"
+           width="6"
+           height="0.5"
+           depth="4"
+           material="src: #marble-floor; color: #ffffff; roughness: 0.1; metalness: 0.3; repeat: 2 2"
+           shadow="cast: true; receive: true">
+    </a-box>
+
+    <!-- Water Surface -->
+    <a-plane id="water-surface"
+             position="0 -0.05 0"
+             rotation="-90 0 0"
+             width="17.5"
+             height="13.5"
+             material="color: #00b7eb; opacity: 0.9; metalness: 0.5; roughness: 0.05; transparent: true"
+             shadow="receive: true">
+        <!-- Gentle Wave Animation -->
+        <a-animation attribute="position"
+                     from="0 -0.05 0"
+                     to="0 0.05 0"
+                     direction="alternate"
+                     dur="6000"
+                     repeat="indefinite"
+                     easing="ease-in-out">
+        </a-animation>
+        <a-animation attribute="material.opacity"
+                     from="0.9"
+                     to="0.95"
+                     direction="alternate"
+                     dur="5000"
+                     repeat="indefinite"
+                     easing="ease-in-out">
+        </a-animation>
+    </a-plane>
+
+    <!-- Infinity Edge -->
+    <a-entity id="infinity-edge" position="9 -0.3 0">
+        <a-box position="0 0 0"
+               width="0.5"
+               height="0.2"
+               depth="13"
+               material="color: #00b7eb; opacity: 0.95; metalness: 0.6; roughness: 0; emissive: #00b7eb; emissiveIntensity: 0.3">
+            <a-animation attribute="material.emissiveIntensity"
+                         from="0.3"
+                         to="0.5"
+                         direction="alternate"
+                         dur="3000"
+                         repeat="indefinite"
+                         easing="ease-in-out">
+            </a-animation>
+        </a-box>
+    </a-entity>
+
+    <!-- Minimalist Waterfall -->
+    <a-entity id="waterfall" position="-9 -0.5 -5">
+        <a-box position="0 0.5 0"
+               width="0.3"
+               height="3"
+               depth="3"
+               material="src: #marble-floor; color: #ffffff; roughness: 0.1; metalness: 0.3">
+        </a-box>
+        <a-plane position="0 0 -0.1"
+                 rotation="0 0 0"
+                 width="0.2"
+                 height="3"
+                 material="color: #00b7eb; opacity: 0.8; metalness: 0.5; roughness: 0.1">
+            <a-animation attribute="position"
+                         from="0 0 -0.1"
+                         to="0 -3 -0.1"
+                         dur="2000"
+                         repeat="indefinite"
+                         easing="linear">
+            </a-animation>
+            <a-animation attribute="material.opacity"
+                         from="0.8"
+                         to="0.6"
+                         dur="2000"
+                         repeat="indefinite"
+                         easing="linear">
+            </a-animation>
+        </a-plane>
+    </a-entity>
+
+    <!-- Luxury Pool Deck -->
+    <a-entity id="luxury-pool-deck">
+        <a-plane position="0 0.1 7.5"
+                 rotation="-90 0 0"
+                 width="20"
+                 height="3"
+                 material="src: #marble-floor; color: #f5f5f5; roughness: 0.2; metalness: 0.3; repeat: 5 2"
+                 shadow="cast: true; receive: true">
+        </a-plane>
+        <a-plane position="0 0.1 -7.5"
+                 rotation="-90 0 0"
+                 width="20"
+                 height="3"
+                 material="src: #marble-floor; color: #f5f5f5; roughness: 0.2; metalness: 0.3; repeat: 5 2"
+                 shadow="cast: true; receive: true">
+        </a-plane>
+        <a-plane position="10 0.1 0"
+                 rotation="-90 0 0"
+                 width="3"
+                 height="14"
+                 material="src: #marble-floor; color: #f5f5f5; roughness: 0.2; metalness: 0.3; repeat: 2 5"
+                 shadow="cast: true; receive: true">
+        </a-plane>
+        <a-plane position="-10 0.1 0"
+                 rotation="-90 0 0"
+                 width="3"
+                 height="14"
+                 material="src: #marble-floor; color: #f5f5f5; roughness: 0.2; metalness: 0.3; repeat: 2 5"
+                 shadow="cast: true; receive: true">
+        </a-plane>
+        <!-- Gold Inlays -->
+        <a-box position="0 0.15 7.5"
+               width="20"
+               height="0.01"
+               depth="0.1"
+               material="color: #ffd700; metalness: 0.8; roughness: 0.2"
+               shadow="cast: true; receive: true">
+        </a-box>
+        <a-box position="0 0.15 -7.5"
+               width="20"
+               height="0.01"
+               depth="0.1"
+               material="color: #ffd700; metalness: 0.8; roughness: 0.2"
+               shadow="cast: true; receive: true">
+        </a-box>
+    </a-entity>
+
+    <!-- Underwater LED Lights -->
+    <a-entity id="pool-lights">
+        <a-entity position="-8 -3.5 5">
+            <a-sphere radius="0.15"
+                      material="color: #ffffff; emissive: #00b7eb; emissiveIntensity: 0.8; opacity: 0.7">
+                <a-animation attribute="material.emissiveIntensity"
+                             from="0.8"
+                             to="1"
+                             direction="alternate"
+                             dur="4000"
+                             repeat="indefinite">
+                </a-animation>
+            </a-sphere>
+        </a-entity>
+        <a-entity position="8 -3.5 5">
+            <a-sphere radius="0.15"
+                      material="color: #ffffff; emissive: #00b7eb; emissiveIntensity: 0.8; opacity: 0.7">
+                <a-animation attribute="material.emissiveIntensity"
+                             from="0.8"
+                             to="1"
+                             direction="alternate"
+                             dur="4000"
+                             repeat="indefinite">
+                </a-animation>
+            </a-sphere>
+        </a-entity>
+        <a-entity position="-8 -3.5 -5">
+            <a-sphere radius="0.15"
+                      material="color: #ffffff; emissive: #00b7eb; emissiveIntensity: 0.8; opacity: 0.7">
+                <a-animation attribute="material.emissiveIntensity"
+                             from="0.8"
+                             to="1"
+                             direction="alternate"
+                             dur="4000"
+                             repeat="indefinite">
+                </a-animation>
+            </a-sphere>
+        </a-entity>
+        <a-entity position="8 -3.5 -5">
+            <a-sphere radius="0.15"
+                      material="color: #ffffff; emissive: #00b7eb; emissiveIntensity: 0.8; opacity: 0.7">
+                <a-animation attribute="material.emissiveIntensity"
+                             from="0.8"
+                             to="1"
+                             direction="alternate"
+                             dur="4000"
+                             repeat="indefinite">
+                </a-animation>
+            </a-sphere>
+        </a-entity>
+    </a-entity>
+
+    <!-- Poolside Furniture -->
+    <a-entity id="luxury-furniture">
+        <!-- Lounge Chairs -->
+        <a-entity id="lounge-1" position="8 0.2 4" rotation="0 -30 0">
+            <a-box position="0 0.2 0"
+                   width="1"
+                   height="0.4"
+                   depth="2.5"
+                   material="color: #ffffff; metalness: 0.7; roughness: 0.3">
+            </a-box>
+            <a-box position="0 0.5 -0.9"
+                   width="1"
+                   height="0.8"
+                   depth="0.1"
+                   material="color: #ffffff; metalness: 0.7; roughness: 0.3"
+                   rotation="-30 0 0">
+            </a-box>
+            <a-box position="0 0.3 0"
+                   width="0.9"
+                   height="0.1"
+                   depth="2.4"
+                   material="src: #fabric-texture; color: #e0f7fa; roughness: 0.9">
+            </a-box>
+        </a-entity>
+        <a-entity id="lounge-2" position="8 0.2 1" rotation="0 -30 0">
+            <a-box position="0 0.2 0"
+                   width="1"
+                   height="0.4"
+                   depth="2.5"
+                   material="color: #ffffff; metalness: 0.7; roughness: 0.3">
+            </a-box>
+            <a-box position="0 0.5 -0.9"
+                   width="1"
+                   height="0.8"
+                   depth="0.1"
+                   material="color: #ffffff; metalness: 0.7; roughness: 0.3"
+                   rotation="-30 0 0">
+            </a-box>
+            <a-box position="0 0.3 0"
+                   width="0.9"
+                   height="0.1"
+                   depth="2.4"
+                   material="src: #fabric-texture; color: #e0f7fa; roughness: 0.9">
+            </a-box>
+        </a-entity>
+        <!-- Glass Table -->
+        <a-entity id="glass-table" position="9 0.5 2.5">
+            <a-cylinder position="0 0 0"
+                        height="0.1"
+                        radius="0.8"
+                        material="color: #ffffff; opacity: 0.5; metalness: 0.8; roughness: 0.1">
+            </a-cylinder>
+            <a-cylinder position="0 -0.5 0"
+                        height="1"
+                        radius="0.08"
+                        material="color: #ffd700; metalness: 0.8; roughness: 0.2">
+            </a-cylinder>
+            <!-- Champagne Bucket -->
+            <a-entity id="champagne-bucket" position="0 0.2 0">
+                <a-cylinder position="0 0 0"
+                            height="0.4"
+                            radius="0.15"
+                            material="color: #ffffff; metalness: 0.9; roughness: 0.1">
+                </a-cylinder>
+                <a-cylinder position="0 0.3 0"
+                            height="0.5"
+                            radius="0.05"
+                            material="color: #1a3c34; metalness: 0.8; roughness: 0.2">
+                </a-cylinder>
+            </a-entity>
+        </a-entity>
+    </a-entity>
+
+    <!-- Single Luxury Float -->
+    <a-entity id="luxury-float" position="2 -0.05 -1">
+        <a-torus position="0 0 0"
+                 radius="1"
+                 radius-tubular="0.2"
+                 material="color: #ffffff; metalness: 0.3; roughness: 0.5">
+            <a-animation attribute="position"
+                         from="0 0 0"
+                         to="0 0.1 0"
+                         direction="alternate"
+                         dur="4000"
+                         repeat="indefinite"
+                         easing="ease-in-out">
+            </a-animation>
+        </a-torus>
+    </a-entity>
+
+    <!-- Poolside Lanterns -->
+    <a-entity id="lanterns">
+        <a-entity position="8 0.3 6">
+            <a-box position="0 0 0"
+                   width="0.3"
+                   height="0.3"
+                   depth="0.3"
+                   material="color: #ffffff; metalness: 0.7; roughness: 0.3">
+            </a-box>
+            <a-light type="point"
+                     position="0 0.2 0"
+                     color="#fff9c4"
+                     intensity="0.8"
+                     distance="5">
+            </a-light>
+        </a-entity>
+        <a-entity position="8 0.3 -6">
+            <a-box position="0 0 0"
+                   width="0.3"
+                   height="0.3"
+                   depth="0.3"
+                   material="color: #ffffff; metalness: 0.7; roughness: 0.3">
+            </a-box>
+            <a-light type="point"
+                     position="0 0.2 0"
+                     color="#fff9c4"
+                     intensity="0.8"
+                     distance="5">
+            </a-light>
+        </a-entity>
+    </a-entity>
+
+    <!-- Minimal Landscaping -->
+    <a-entity id="landscaping">
+        <a-box position="10 0.5 7"
+               width="2"
+               height="1"
+               depth="0.5"
+               material="color: #2e7d32; roughness: 0.9">
+        </a-box>
+        <a-box position="10 0.5 -7"
+               width="2"
+               height="1"
+               depth="0.5"
+               material="color: #2e7d32; roughness: 0.9">
+        </a-box>
+    </a-entity>
+</a-entity>
+
+</a-entity>
+
+ <a-entity 
+ position="-15 5 10">
+      <a-camera></a-camera>
+    </a-entity>
+</a-scene> 
+
+              </body>
+              </html>          
+                
